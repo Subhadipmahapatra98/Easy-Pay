@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clp_mall_header_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="245dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="-60dp"
+        app:srcCompat="@drawable/easypay" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wallet"
+        android:textSize="33dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="134dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/backgroundbox"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="22dp"
+            android:layout_height="wrap_content"
+            android:text="₹"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/input_amount"
+            android:layout_width="83dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:hint="12345"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="5"
+            android:textColor="@color/white"
+            android:textColorHint="@color/colorView"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Your Option?"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="9dp">
+
+        <RadioButton
+            android:id="@+id/gpay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gpay"
+            android:textColor="@color/white"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/phonepe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:text="PhonePe" />
+
+        <RadioButton
+            android:id="@+id/paytm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:text="Paytm" />
+
+        <RadioButton
+            android:id="@+id/credit_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="21dp"
+            android:textStyle="bold"
+            android:text="Credit Card" />
+
+        <RadioButton
+            android:id="@+id/debit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Debit Card"
+            android:textColor="@color/white"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/wallet2"
+            android:layout_width="225dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="87dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Add Money"
+            android:textColor="@color/white"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

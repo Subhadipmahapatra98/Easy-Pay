@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clp_mall_header_bg"
+    tools:context=".Card">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="150dp"
+            android:text="Card Number"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.032"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/cardnumber1"
+            android:layout_width="80dp"
+            android:layout_height="52dp"
+            android:background="@drawable/backgroundbox"
+            android:gravity="center"
+            android:hint="0000"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textColor="@color/white"
+            android:textColorHint="@color/material_on_primary_disabled"
+            android:textSize="24dp"
+            tools:ignore="Labelfor" />
+
+        <EditText
+            android:id="@+id/cardnumber2"
+            android:layout_width="80dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/backgroundbox"
+            android:gravity="center"
+            android:hint="1111"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textColor="@color/white"
+            android:textColorHint="@color/material_on_primary_disabled"
+            android:textSize="24dp"
+            tools:ignore="Labelfor" />
+
+        <EditText
+            android:id="@+id/cardnumber3"
+            android:layout_width="80dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/backgroundbox"
+            android:gravity="center"
+            android:hint="2222"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textColor="@color/white"
+            android:textColorHint="@color/material_on_primary_disabled"
+            android:textSize="24dp"
+            tools:ignore="Labelfor" />
+
+        <EditText
+            android:id="@+id/cardnumber4"
+            android:layout_width="80dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/backgroundbox"
+            android:gravity="center"
+            android:hint="3333"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textColor="@color/white"
+            android:textColorHint="@color/material_on_primary_disabled"
+            android:textSize="24dp"
+            tools:ignore="Labelfor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.03"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expiry Date"
+            android:layout_marginLeft="35dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CVV"
+            android:layout_marginLeft="80dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.03"
+        tools:ignore="MissingConstraints">
+
+
+        <EditText
+            android:id="@+id/expdate"
+            android:layout_width="50dp"
+            android:layout_height="52dp"
+            android:background="@drawable/backgroundbox"
+            android:gravity="center"
+            android:hint="MM"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="@color/white"
+            android:textColorHint="@color/material_on_primary_disabled"
+            android:textSize="24dp"
+            tools:ignore="Labelfor" />
+
+        <EditText
+            android:id="@+id/inputotp2"
+            android:layout_width="80dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/backgroundbox"
+            android:gravity="center"
+            android:hint="YYYY"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textColor="@color/white"
+            android:textColorHint="@color/material_on_primary_disabled"
+            android:textSize="24dp"
+            tools:ignore="Labelfor" />
+
+        <EditText
+            android:id="@+id/inputotp3"
+            android:layout_width="80dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/backgroundbox"
+            android:gravity="center"
+            android:hint="123"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="@color/white"
+            android:textColorHint="@color/material_on_primary_disabled"
+            android:textSize="24dp"
+            tools:ignore="Labelfor" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pay"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:focusable="true"
+        android:fontFamily="@font/allerta"
+        android:paddingStart="25dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="15dp"
+        android:text="Pay"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintVertical_bias="0.147" />
+</androidx.constraintlayout.widget.ConstraintLayout>
