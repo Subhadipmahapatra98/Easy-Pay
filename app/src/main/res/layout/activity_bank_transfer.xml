@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clp_mall_header_bg"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/bank_name"
+        android:layout_width="249dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorView"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241" />
+
+    <EditText
+        android:id="@+id/bank_acno"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="249dp"
+        android:layout_height="49dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:hint="Account Number"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/colorView"
+        android:textColorLink="@color/black"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bank_name"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <EditText
+        android:id="@+id/bank_cnfacno"
+        android:layout_width="249dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Confirm Account Number"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorView"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bank_name"
+        app:layout_constraintVertical_bias="0.196" />
+
+
+    <EditText
+        android:id="@+id/bank_ifsc"
+        android:layout_width="249dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="  IFCS"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorView"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bank_name"
+        app:layout_constraintVertical_bias="0.346" />
+
+    <EditText
+        android:id="@+id/bank_amount"
+        android:layout_width="249dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/colorView"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bank_name"
+        app:layout_constraintVertical_bias="0.492" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="219dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="Bank Transfer"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="117dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#1C1A25"
+        android:text="Send"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bank_amount"
+        app:layout_constraintVertical_bias="0.308" />
+</androidx.constraintlayout.widget.ConstraintLayout>
